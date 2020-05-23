@@ -8,9 +8,7 @@ const Body = Matter.World;
 function setup() {
   var canvas = createCanvas(600,600);
 
-  
-
-  //ground = createSprite(200,375,400,50);
+  ground = createSprite(200,375,400,50);
 
   engine = Engine.create();
   world = engine.world;
@@ -21,7 +19,6 @@ function setup() {
 function draw() {
   background("orange");
   Engine.update(engine);
-  
 
   box1.display();
 
