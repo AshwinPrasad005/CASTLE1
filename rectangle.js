@@ -5,7 +5,7 @@ class Rectangle{
             isStatic : true
         }
 
-        this.body = Bodies.rectangle(x,y.width,height,option);
+        this.body = Bodies.rectangle(x,y,width,height,option);
         this.height = height;
         this.width = width;
         World.add(world,this.body);
