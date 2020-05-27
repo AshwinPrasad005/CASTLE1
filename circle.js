@@ -16,8 +16,9 @@ class Circle{
         //var angle = this.body.angle;
         push();
         
-        circleMode(CENTER);
-        circle(pos.x,pos.y,this.radius);
+        ellipseMode(CENTER);
+        fill("red")
+        ellipse(pos.x,pos.y,this.radius);
         pop();
 
     }
