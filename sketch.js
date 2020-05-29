@@ -1,4 +1,4 @@
-var ground,world,engine,box1,box2,box3,box4,box5,box6,cone1,cone2,cone3;
+var ground,world,engine,box1,box2,box3,box4,box5,box6,cone1,cone2,cone3,tri1,tri2;
 
 const Engine = Matter.Engine;
 const Bodies = Matter.Bodies;
@@ -22,6 +22,7 @@ function setup() {
   box4 = new Rectangle(300,250,200,10);
   box5 = new Rectangle(300,200,75,100);
   box6 = new Rectangle(300,175,100,30);
+  tri1 = new Triangle(100,350,3,10);
 }
 
 function draw() {
@@ -37,6 +38,7 @@ function draw() {
   box3.display();
   box4.display();
   box6.display();
+  tri1.display();
   
 
 }
