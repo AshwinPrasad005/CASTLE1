@@ -6,7 +6,7 @@ class Rectangle{
         }
 
         this.body = Bodies.rectangle(x,y,width,angle,option);
-        Matter.Body.setangle(this.body,angle);
+        Matter.Body.setAngle(this.body,angle);
         World.add(world,this.body);
 
     }
