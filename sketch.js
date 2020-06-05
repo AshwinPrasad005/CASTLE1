@@ -24,20 +24,20 @@ function setup() {
   box6 = new Rectangle(165,123,50, PI/2);
   box7 = new Rectangle(115,148,50, PI/2);
   box8 = new Rectangle(190,147,50, PI/2);
-  tri1 = new Rectangle(115,50,50, -PI/7);
-  tri2 = new Rectangle(190,50,50, -PI/7);
+  ground = new Rectangle(240,250,400,PI/7)
+  tri1 = new Triangle(150,150,50,50,-PI/7);
+  tri2 = new Triangle(150,175,50,50,-PI/7);
 }
 
 function draw() {
   background("orange");
   Engine.update(engine);
 
+  tri1.display();
+  tri2.display();
   cone1.display();
   cone2.display();
   cone3.display();
-  
-  tri1.display();
-  tri2.display();
 
   box1.display();
   box2.display();
@@ -47,5 +47,7 @@ function draw() {
   box6.display();
   box7.display();
   box8.display();
+
+  //ground.display();
 
 }
