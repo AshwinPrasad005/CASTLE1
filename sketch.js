@@ -16,17 +16,17 @@ function setup() {
   cone1 = new Circle(300,150,25);
   cone2 = new Circle(200,250,25);
   cone3 = new Circle(400,250,25);
-  box1 = new Rectangle(151,85,50, PI/2);
-  box2 = new Rectangle(115,124,50, PI/2);
-  box3 = new Rectangle(190,122,50, PI/2);
-  box4 = new Rectangle(151,110,50, PI/2);
-  box5 = new Rectangle(140,124,50, PI/2);
-  box6 = new Rectangle(165,123,50, PI/2);
-  box7 = new Rectangle(115,148,50, PI/2);
-  box8 = new Rectangle(190,147,50, PI/2);
-  ground = new Rectangle(240,250,400,PI/7)
-  tri1 = new Triangle(150,150,50,50,-PI/7);
-  tri2 = new Triangle(150,175,50,50,-PI/7);
+  box1 = new Rectangle(150,85,100,50);
+  box2 = new Rectangle(110,125,50,50);
+  box3 = new Rectangle(190,125,50, 50);
+  box4 = new Rectangle(150,110,50, 50);
+  box5 = new Rectangle(135,125,60,50);
+  box6 = new Rectangle(165,125,60,50);
+  box7 = new Rectangle(115,150,50, 50);
+  box8 = new Rectangle(190,150,50, 50);
+  ground = new Rectangle(240,250,400,PI/8)
+  tri1 = new Triangle(150,150,50,50,-PI/8);
+  tri2 = new Triangle(150,150,50,50,-PI/8);
 }
 
 function draw() {

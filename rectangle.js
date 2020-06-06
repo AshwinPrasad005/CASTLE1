@@ -1,12 +1,14 @@
 class Rectangle{
 
-    constructor(x,y,width,angle){
+    constructor(x,y,width,height){
         var option = {
             isStatic : true
         }
 
-        this.body = Bodies.rectangle(x,y,width,angle,option);
-        Matter.Body.setAngle(this.body,angle);
+        this.body = Bodies.rectangle(x,y,width,height,option);
+        //Matter.Body.setAngle(this.body,angle);
+        this.height = height;
+        this.width = width;
         World.add(world,this.body);
 
     }
@@ -14,14 +16,14 @@ class Rectangle{
      display(){
 
         var pos = this.body.position;
-        var angle = this.body.angle;
+        //var angle = this.body.angle;
         //var angle = this.body.angle;
         push();
-        translate(pos.x,pos.y);
-        rotate(angle);
+        //rotate(angle);
         rectMode(CENTER);
+        translate(pos.x,pos.y);
         fill("red");
-        rect(pos.x,pos.y,this.width,50,angle);
+        rect(pos.x,pos.y,this.width,this.height);
         pop();
 
     }
