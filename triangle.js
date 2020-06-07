@@ -1,7 +1,7 @@
 class Triangle {
     constructor(x, y, height, angle) {
       var options = {
-          isStaic:true
+          isStatic:true
       }
       this.body = Bodies.rectangle(x, y, 50, height, options);
       Matter.Body.setAngle(this.body,angle);

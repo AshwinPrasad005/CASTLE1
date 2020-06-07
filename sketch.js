@@ -22,11 +22,11 @@ function setup() {
   box4 = new Rectangle(150,110,50, 50);
   box5 = new Rectangle(135,125,60,50);
   box6 = new Rectangle(165,125,60,50);
-  box7 = new Rectangle(115,150,50, 50);
+  box7 = new Rectangle(110,150,50, 50);
   box8 = new Rectangle(190,150,50, 50);
-  ground = new Rectangle(240,250,400,PI/8)
-  tri1 = new Triangle(150,150,50,50,-PI/8);
-  tri2 = new Triangle(150,150,50,50,-PI/8);
+  ground = new Rectangle(250,250,400,PI/8)
+  tri1 = new Triangle(165,65,50,50,-PI/7);
+  tri2 = new Triangle(240,25,50,50,-PI/8);
 }
 
 function draw() {
